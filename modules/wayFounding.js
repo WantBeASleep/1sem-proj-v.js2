@@ -1,4 +1,4 @@
-import graph from './wayGraph.js';
+import graph from '../techInfo/wayGraph.js';
 
 function wayFounding(startInput, endInput) {
     let wayStr = [];
@@ -33,7 +33,7 @@ function wayFounding(startInput, endInput) {
 
     const obj = {
         count : wayCount,
-        string : wayStr
+        way : wayStr
     };
 
     return obj;

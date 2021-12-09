@@ -1,4 +1,12 @@
-import wayFounding from './modules/wayFounding.js'
+import addForm from './modules/addForm.js';
+import inputOpperator from './modules/inputOpperator.js'
 
-const obj = wayFounding('G1', 'W3');
-console.log(obj.count, obj.string);
+const canv = document.getElementById('canv');
+
+canv.width = window.innerWidth;
+canv.height = window.innerHeight;
+
+document.body.append(canv);
+
+addForm();
+inputOpperator();
